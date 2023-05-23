@@ -1,0 +1,48 @@
+strong {
+    font-size: 25px;
+}
+
+a {
+   color: black; 
+   padding: 20px;
+   float: right;
+}
+
+body {
+    text-align: center;
+}
+
+#top {
+    margin-top: 0px;
+
+}
+
+form {
+    text-align: center;
+    margin-bottom: 50px;
+    display: inline-block;
+
+}
+
+img {
+    width: 400px;
+    display: block;
+}
+
+p.end {
+    display: inline-flex;
+    margin: 10px;
+}
+
+footer {
+    text-align: right;
+}
+
+a.nav-link {
+    padding: 0px 0px 0px 10px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+}

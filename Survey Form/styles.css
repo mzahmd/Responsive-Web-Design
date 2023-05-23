@@ -1,0 +1,24 @@
+body {
+    background-color: #0a0a23;
+    color: aliceblue;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+#back {
+    background-color: lightgray;
+    height: auto;
+    color: #0a0a23;
+}
+
+label {
+    display: block;
+}
+
+#back {
+    width: 50%;
+    margin: auto;
+    margin-left: 400px;
+}
