@@ -1,87 +1,146 @@
-nav {
-    background-color: black;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 20px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    display: inline-flexbox;
-}
-
-h1, h3 {
-    text-align: center;
-    text-decoration: none;
-}
-
-li.nav {
-    display: inline-block;
-    padding-right: 20px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rebeccapurple;
-}
-
-body {
-    background-color: blueviolet;
+* {
+    margin: 0;
+    padding: 0
 }
 
 #navbar {
-    font-family: cursive;
-    font-size: 30px;
-    text-align: right;
+    display: flex;
+    justify-content: right;
+    background-image: linear-gradient(90deg, red, orange);
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-style: italic;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.welcome {
-    font-family:fantasy;
-    max-width: 100%;
-    background-color: lightcoral;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top:100px;
-    padding-bottom: 300px;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+@media (min-width: 50rem) {
+    #navbar {
+        /* background-image: linear-gradient(90deg, red, red); */
+        /* background-color: white; */
+        font-size: 2rem;
+        padding-right: 0.5rem;
+    }
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-link:hover {
+    color: white;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(90deg, azure, lightblue);
+    height: 100vh;
+    font-size: 1.5rem;
+    font-style: oblique;
+    line-height: 2rem;
+}
+
+#welcome-section > h1 {
+    padding: 2rem;
+}
+
+@media (min-width: 50rem) {
+    #welcome-section {
+        font-size: 1.75rem;
+    }
 }
 
 #projects {
-    background-color: lightblue;
-    margin-top: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-top: 50px;
-    padding-bottom: 350px;
+    background-image: linear-gradient(90deg, rgb(238, 186, 238), rgb(225, 11, 225));
+    text-align: center;
+    padding: 2rem;
 }
 
-.Contact-section {
-    background-color: lightgoldenrodyellow;
-    margin: 0px;
-    padding-top: 50px;
-    padding-bottom: 350px;
+
+#projects > h1 {
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: bold;
+    /* text-align: center; */
+    padding: 2rem 0rem;
 }
 
-@media (max-width: 500px) {
-    body {
-        font-size: 14px;
-        background-color: blue;
+.project-tile {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 0.125rem solid black;
+    border-radius: 999rem;
+    padding: 1rem 0.75rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+@media (min-width: 50rem) {
+    #projects > h1 {
+        font-size: 2rem;
     }
-    nav {
-        padding-bottom: 20px;
-        position: relative;
-        margin-top: 0px;
-        padding-top: 0px;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        position: fixed;
+
+    .project-tile {
+        font-size: 1.25rem;
+
     }
+}
+
+
+.project-tile:hover {
+    background-color: rgba(198, 97, 202, 0.5);
+    font-weight: bold;
+}
+
+#contact {
+    background-image: linear-gradient(90deg, #4568dc, #b06ab3);
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-heading {
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2rem 0rem;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+@media (min-width: 50rem) {
+    .contact-heading {
+        font-size: 2rem;
+    }
+
+    .contact-link {
+        font-size: 1.5rem;
+    }
+}
+
+
+#profile-link {
+    display: inline-block;
+    background-color: rgba(100, 149, 237, 0.3);
+    border-radius: 999rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
