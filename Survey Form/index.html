@@ -2,78 +2,92 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1.0" />
-  <title>Survey Form</title>
-  <link href="styles.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform </p>
+<div class="container">
+    <div class="topic">
+        <h1 id="title">freeCodCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <form method="post" action="#" class="survey" id="survey-form">
+        <div class="survey-label">
+            <label id="name-label" for="name">Name</label>
+            <input class="survey-input" type="text" placeholder="Enter your name" id="name" required>
+        </div>
+        <div class="survey-label">
+            <label id="email-label" for="email">Email</label>
+            <input class="survey-input" type="email" placeholder="Enter your Email" id="email" required>
+        </div>
+        <div class="survey-label">
+            <label id="number-label" for="number">Age <span class="survey-number-span">(optional)</span></label>
+            <input class="survey-input" type="number" placeholder="Enter your Age" id="number" min="0" max="200">
+        </div>
+        <div class="survey-label">
+            <label id="dropdown-label-1" for="dropdown">Which option best describes your current roll</label>
+            <select id="dropdown" class="survey-select">
+                <option disabled selected value>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="survey-label">
+            <p id="radio-label">Would you recommend freeCodeCamp to a friend?</p>
+            <label class="survey-label-radio"><input class="survey-input-radio" type="radio" name="recommend"
+                                                     value="definitely">Definitely</label><br>
+            <label class="survey-label-radio"><input class="survey-input-radio" type="radio" name="recommend"
+                                                     value="maybe">Maybe</label><br>
+            <label class="survey-label-radio"><input class="survey-input-radio" type="radio" name="recommend"
+                                                     value="not-sure">Not sure</label>
+        </div>
+        <div class="survey-label">
+            <label id="dropdown-label-2">What is your favorite feature of freeCodeCamp?
+                <select class="survey-select">
+                    <option disabled selected value>Select an option</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </label>
+        </div>
+        <div class="survey-label">
+            <p class="survey-label-paragraph-checkbox">What would you like to see improved? (Check all that apply)</p>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="FE">Front-end Projects</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="BE">Back-end Projects</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="DV">Data Visualization</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="C">Challenges</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="OSC">Open Source Community</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="GHR">Gitter help rooms</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="V">Videos</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="CM">City Meetups</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="W">Wiki</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="F">Forum</label><br>
+            <label class="survey-label--checkbox"><input class="survey-label-input--checkbox" type="checkbox" value="AC">Additional Courses</label>
+        </div>
 
-  <div id="back">
-    <form id="survey-form">
+        <div class="survey-label">
+            <label id="textarea-label">Any comments or suggestions?
+                <textarea class="survey-label--textarea" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </div>
 
-      <div id="first">
-        <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required></input>
-
-        <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your Email" required></input>
-
-        <label id="number-label" for="number">Age (optional)</label>
-        <input id="number" type="number" min="0" max="200" placeholder="Age" required></input>
-      </div>
-
-      <label for="dropdown1">Which option best describes your current role?</label>
-      <select id="dropdown1">
-        <option></option>
-        <option>Student</option>
-        <option>Full Time Job</option>
-        <option>Full Time Learner</option>
-        <option>Prefer not to say</option>
-        <option>Other</option>
-      </select>
-
-      <label for="optional">Would you recommend freeCodeCamp to a friend?</label>
-      <section id="optional">
-        <input type="radio" value="definetly" name="button"></input> Definetly
-        <input type="radio" value="mayby" name="button"></input> Mayby
-        <input type="radio" value="not sure" name="button"></input> Not sure
-      </section>
-
-      <select id="dropdown">
-        <option></option>
-        <option>Challanges</option>
-        <option>Projects</option>
-        <option>Community</option>
-        <option>Open Source</option>
-      </select>
-
-      <section>
-        <label for="Projects"><input type="checkbox" value="fe" id="Projects"></input> Projects</label>
-        <label><input type="checkbox" value="be"></input>Back-end Projects</label>
-        <label><input type="checkbox" value="dv"></input>Data Visualization</label>
-        <label><input type="checkbox" value="c"></input> Challenges</label>
-        <label><input type="checkbox" value="osc"></input> Open Source Community</label>
-        <label><input type="checkbox" value="ghr"></input> Gitter help rooms</label>
-        <label><input type="checkbox" value="v"></input> Videos</label>
-        <label><input type="checkbox" value="cm"></input> City Meetups</label>
-        <label><input type="checkbox" value="w"></input> Wiki</label>
-        <label><input type="checkbox" value="f"></input> Forum</label>
-        <label><input type="checkbox" value="ac"></input> Additional Courses</label>
-      </section>
-
-      <section>
-        <textarea placeholder="enter your comment" rows="5" cols="50"></textarea>
-      </section>
-
-      <input id="submit" type="submit" value="submit"></input>
+        <div class="survey-label">
+            <input id="submit" type="submit" value="Submit">
+        </div>
 
     </form>
-  </div>
+</div>
+
 </body>
 
 </html>

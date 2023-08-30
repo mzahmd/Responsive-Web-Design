@@ -1,24 +1,121 @@
 body {
-    background-color: #0a0a23;
-    color: aliceblue;
+    padding: 0;
+    margin: 0;
 }
 
-#title, #description {
+::selection {
+    color: blue;
+    background-color: white;
+}
+
+.container {
+    font-family: sans-serif, Arial, Helvetica;
+    background-color: rgb(27, 27, 50);
+}
+
+.topic {
     text-align: center;
+    color: white;
 }
 
-#back {
-    background-color: lightgray;
-    height: auto;
-    color: #0a0a23;
+#title {
+    margin-top: 0;
+    padding-top: 1rem;
 }
 
-label {
-    display: block;
+#description {
+    font-size: 1.125rem;
 }
 
-#back {
-    width: 50%;
+.survey {
+    background-image: linear-gradient(90deg, rgb(7, 7, 42), rgb(3, 3, 63));
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 45rem;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    padding: 1rem;
     margin: auto;
-    margin-left: 400px;
+}
+
+.survey-label {
+    padding-bottom: 1rem;
+}
+
+.survey-number-span {
+    color: rgba(255, 255, 255, 0.7)
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label-1,
+#radio-label,
+#dropdown-label-2,
+#textarea-label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.survey-input {
+    width: 100%;
+    padding: 0.25rem 0;
+}
+
+.survey-label--checkbox {
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+.survey-label--checkbox:hover {
+    cursor: pointer;
+}
+
+.survey-label-radio {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.survey-label-radio:hover {
+    cursor: pointer;
+}
+
+.survey-input-radio {
+    margin-right: 0.5rem;
+}
+
+.survey-label-paragraph-checkbox {
+    margin-bottom: 0;
+}
+
+.survey-label-input--checkbox {
+    margin-right: 0.5rem;
+}
+
+.survey-select {
+    width: 100%;
+    padding: 0.25rem 0;
+}
+
+#radio-label {
+    margin-bottom: 0;
+}
+
+.survey-label--textarea {
+    width: 100%;
+    min-height: 5rem;
+    resize: vertical;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(90deg, #000428 0%, #004e92 51%, #000428 100%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+#submit:hover {
+    color: #fff;
 }
