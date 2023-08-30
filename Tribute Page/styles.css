@@ -58,14 +58,21 @@ body {
 .tribute-topic {
     text-align: center;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 #tribute-info {
     text-align: left;
     line-height: 1.5rem;
-    margin-left: 30%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (min-width: 50rem) {
+    #tribute-info {
+        margin-left: 30%;
+        margin-right: 20%;
+    }
 }
 
 .tribute-li {
@@ -76,8 +83,15 @@ body {
     font-style: italic;
     text-align: left;
     line-height: 1.5rem;
-    margin-left: 30%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (min-width: 50rem) {
+    .quote {
+        margin-left: 30%;
+        margin-right: 20%;
+    }
 }
 
 .quote-block {
