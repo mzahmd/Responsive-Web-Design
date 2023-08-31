@@ -9,61 +9,98 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav id="nav-bar">
-            <a class="nav-link" href="#Feature">Feature</a>
-            <a class="nav-link" href="#How_it_Works">How It Works</a>
-            <a class="nav-link" href="#Pricing">Pricing</a>
-        </nav>
-        <img id="header-img"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
-    </header>
+<header id="header">
+    <img id="header-img"
+         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+    <nav id="nav-bar">
+        <a class="nav-link" href="#Features">Features</a><br>
+        <a class="nav-link" href="#How_It_Works">How It Works</a><br>
+        <a class="nav-link" href="#Pricing">Pricing</a>
+    </nav>
+</header>
 
-    <section id="top">
-    <h2>Handcrafted, home-made masterpieces</h2>
+<section class="enter">
+    <h3>Handcrafted, home-made masterpieces</h3>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" name="email" placeholder="enter your email" required>
-        <input id="submit" type="submit" value="Get Started">
+        <label for="email"><input type="email" placeholder="Enter your email Adress" name="email" id="email" required></label><br>
+        <input type="submit" id="submit" class="btn" value="Get Started">
     </form>
 </section>
 
-    
-    <section id="Feature">
-
-        <strong>Materials</strong><br>
-
-        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-        purchase.
-
+<div class="container">
+    <section id="Features">
+        <div>
+            <h2>Premium Materials</h2>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
+                your purchase.</p>
+        </div>
     </section>
-    <p></p>
-    <section id="How_it_Works">
+    <div>
+        <h2>Fast Shipping</h2>
+        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+            returns if you are not satisfied.</p>
+    </div>
+    <div>
+        <h2>Quality Assurance</h2>
+        <p>
+            For every purchase you make, we will ensure there are no damages or faults and we will check and test the
+            pitch of your instrument.
+        </p>
+    </div>
+</div>
 
-        <strong>Shipping</strong><br>
-
-        We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if
-        you are not satisfied.
-
+<div class="container">
+    <section id="How_It_Works">
+        <iframe id="video" src="https://www.youtube.com/embed/ZUFK0WXJyp0"></iframe>
     </section>
-    <p></p>
+</div>
+
+<div class="container">
     <section id="Pricing">
-
-        <strong>Quality Assurance</strong><br>
-
-        For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch
-        of your instrument.
-
+        <div class="price-container">
+            <div class="price-header">Tenor Trombone</div>
+            <h4>$600</h4>
+            <ul class="price-ul">
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn">Select</button>
+        </div>
+        <div class="price-container">
+            <div class="price-header">Bass Trombonee</div>
+            <h4>$900</h4>
+            <ul class="price-ul">
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn">Select</button>
+        </div>
+        <div class="price-container">
+            <div class="price-header">Valve Trombone</div>
+            <h4>$1200</h4>
+            <ul class="price-ul">
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn">Select</button>
+        </div>
     </section>
+</div>
 
-    <video id="video">
-        <source src="movie.mp4">
-    </video>
-
-    <footer>
-        <p class="end">Privacy</p>
-        <p class="end">Terms</p>
-        <p class="end">Contact</p>
-    </footer>
+<footer class="foot">
+    <ul class="foot-ul">
+        <li><a class="foot-ul-link" href="#">Privacy</a></li>
+        <li><a class="foot-ul-link" href="#">Terms</a></li>
+        <li><a class="foot-ul-link" href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2016, Original Trombones</span>
+</footer>
 
 </body>
 
