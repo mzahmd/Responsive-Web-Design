@@ -1,5 +1,96 @@
-@media (max-width: 500px) {
-    body {
-        background-color: blue;
+#navbar {
+    font-size: 1.25rem;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    border-right: 1px solid rgb(128, 128, 128);
+    border-bottom: 2px solid black;
+    padding: 0;
+}
+
+@media (min-width: 50rem) {
+    #navbar {
+        position: fixed;
+        font-size: 1rem;
+        border-bottom: none;
+        width: 20%;
+        height: 100%;
     }
+}
+
+.nav-header {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+@media (min-width: 50rem) {
+    .nav-header {
+        font-size: 1.125rem;
+    }
+}
+
+
+.nav-ul {
+    list-style: none;
+    height: 30vh;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 50rem) {
+    .nav-ul {
+        min-height: 90%;
+    }
+}
+
+.nav-ul>li {
+    border-bottom: 2px solid rgb(128, 128, 128);
+    padding: 0.785rem 0;
+}
+
+.nav-ul>li:last-child {
+    border-bottom: none;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+#main-doc {
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 50rem) {
+    #main-doc {
+        margin-left: 22%;
+    }
+}
+
+.main-section {
+    font-size: 1rem;
+}
+
+.main-section header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.main-section header:first-child {
+    padding-top: 1rem;
+}
+
+code {
+    display: block;
+    background-color: #eae4e4;
+    background-image: linear-gradient(90deg, #f0eded 0%, #ebedee 100%);
+    max-width: 80vw;
+    border-radius: 0.5rem;
+    font-size: 0.925rem;
+    overflow: scroll;
+    padding: 0.5rem;
 }
